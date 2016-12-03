@@ -1,8 +1,6 @@
 package studaout.y2015
 
-/**
- * Created by txa47 on 12/16/2015.
- */
+
 object Day11 {
 
   def nextPwd(str:String) : String = {
