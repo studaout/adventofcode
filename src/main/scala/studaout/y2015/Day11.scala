@@ -37,7 +37,7 @@ object Day11 {
         }
       }
     }
-    !isProhibited && seq > 0 && repeat > 1
+    ! isProhibited && seq > 0 && repeat > 1
   }
 
   def pwdStream(init:String) : Stream[String] = {
