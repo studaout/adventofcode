@@ -16,7 +16,6 @@ object Day1 {
       val step = if (i._3) i._2 else i._2 + 1
       if ( i._3 || floor < 0) (floor, step, true) else (floor, step, false)
     })
-
     println("target floor: " + res._1)
     println("basement at step: " + res._2)
   }
