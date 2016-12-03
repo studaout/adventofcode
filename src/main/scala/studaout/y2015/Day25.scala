@@ -1,8 +1,5 @@
 package studaout.y2015
 
-/**
-  * Created by timout on 12/30/15.
-  */
 object Day25 {
 
   def index(row: Int, col: Int): Int = {

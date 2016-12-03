@@ -1,8 +1,5 @@
 package studaout.y2015
 
-/**
-  * Created by timout on 12/25/15.
-  */
 object Day21 {
 
   case class Acc(cost:Int, damage:Int, armor:Int ) {
