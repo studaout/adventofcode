@@ -37,7 +37,7 @@ object Day5 {
 
   def part2(): Unit = {
     var niceCount = 0
-    for ( line <- lines(inputFile) ) {
+    lines(inputFile).foreach( line => {
       var doubles = 0
       var repeat = 0
       val cache = collection.mutable.HashMap[String, Int]()
@@ -57,7 +57,7 @@ object Day5 {
         }
       }
       if ( doubles > 0 && repeat > 0 ) niceCount += 1
-    }
+    })
     println("nice count: " + niceCount)
 //    It contains a pair of any two letters that appears at least twice in the string without overlapping,
 //    like xyxy (xy) or aabcdefgaa (aa), but not like aaa (aa, but it overlaps).
