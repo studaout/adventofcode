@@ -31,7 +31,7 @@ object Day6 {
     val inputFile = "/2015/day6-input.txt"
     val size = 1000
     val mat = Array.ofDim[Int](size, size)
-    for ( line <- lines(inputFile) ) {
+    lines(inputFile).foreach( line => {
       line match {
         case r"turn off (\d+)${x1},(\d+)${y1} through (\d+)${x2},(\d+)${y2}" =>
           for ( x<-x1.toInt to x2.toInt; y<- y1.toInt to y2.toInt ) {
@@ -43,7 +43,7 @@ object Day6 {
           for ( x<-x1.toInt to x2.toInt; y<- y1.toInt to y2.toInt ) mat(x)(y) += 2
         case _ =>
       }
-    }
+    })
     var count = 0
     for ( x<-0 until size; y<-0 until size ) count += mat(x)(y)
     println(count)
