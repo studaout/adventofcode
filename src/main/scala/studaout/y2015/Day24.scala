@@ -2,9 +2,6 @@ package studaout.y2015
 
 import studaout._
 
-/**
-  * Created by timout on 12/28/15.
-  */
 object Day24 {
 
   val inputFile = "/2015/day24-input.txt"
